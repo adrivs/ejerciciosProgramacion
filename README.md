@@ -1,4 +1,4 @@
-# Ejercicios de programación
+# Ejercicios de programación :computer:
 
 Ejercicios de la asignatura de **programación** de **1º DAW (Desarrollo de Aplicaciones Web)**
 
