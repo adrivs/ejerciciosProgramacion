@@ -29,9 +29,23 @@ javac HolaMundo.java
 
 ```
 
-Puedes ejecutar el programa mediante el siguiente comando:
+Puedes ejecutar el programa mediante el comando `java`:
 
 ``` console
 java HolaMundo
 
 ```
+
+## Qué se estudia en Programación
+
+* Lenguaje de programación Java
+* Comandos de Linux
+* Git y Github
+
+## Bibliografía
+
+<img src = "imagenes/aprendejava.jpeg" width="240">
+
+[Aprende Java con Ejercicios] (https://leanpub.com/aprendejava)
+
+
