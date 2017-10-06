@@ -1,11 +1,9 @@
 
-public class Uno {
+public class HolaMundo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-			
 		
-			System.out.print("Hola Adri");
+		System.out.print("\033[33m¡Hola Mundo!");
 			
 	}
 
