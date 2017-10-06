@@ -46,6 +46,6 @@ java HolaMundo
 
 <img src = "imagenes/aprendejava.jpeg" width="240">
 
-[Aprende Java con Ejercicios] (https://leanpub.com/aprendejava)
+[Aprende Java con Ejercicios](https://leanpub.com/aprendejava)
 
 
