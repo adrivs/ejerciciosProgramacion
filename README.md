@@ -48,7 +48,7 @@ java HolaMundo
 
 [Aprende Java con Ejercicios](https://leanpub.com/aprendejava)
 
-<img src = "Documentos/PRO/linuxpracticalmanual200.png">
+<img src = "Documentos/PRO/linuxmanual.jpg">
 
 [Linux Practical Manual with Exercises](https://github.com/LuisJoseSanchez/programacion/blob/master/linux_practical_manual_31_07_2014_en.pdf)
 
