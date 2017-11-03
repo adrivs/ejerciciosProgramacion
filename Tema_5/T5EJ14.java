@@ -19,7 +19,6 @@ public class T5EJ14 {
       for (int i = 0; i < expo; i++) {
         
          aux *= base;
-         
          total = aux;
                                
         }
