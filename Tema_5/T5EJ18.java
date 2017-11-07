@@ -24,10 +24,10 @@ public class T5EJ18 {
           if (n1 < n2) {
             
             do {
-         
-         n1+=7;
-         aux = n1;
-         System.out.println(aux);
+               
+               n1+=7;
+               aux = n1;
+               System.out.println(aux);
          
          
          
@@ -43,21 +43,8 @@ public class T5EJ18 {
                     System.out.println(aux);
   
                     } while (aux < n1-7);
-        
-              
-              
-              }
-        
-        
-     
-        
-        
-        
-        
-        
-        }
-    
-    
+      }
+    }
 	}
 }
 
