@@ -33,12 +33,8 @@ public class T5EJ21 {
          if  (n > mayor) {
            
            mayor = n;
-           
            }
-  
   }
-       
-      
       } while (n>0);
       
       System.out.println("Se han introducido: " + (contador-1) + " números");
