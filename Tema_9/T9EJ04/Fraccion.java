@@ -1,17 +1,25 @@
-//invierte, simplifica, multiplica, divide...
+
 public class Fraccion {
 
-	
-	private int numerador;
-	private int denominador;
-	
-	public Fraccion () {
-		
+	int numerador;
+	int denominador;
+
+	public Fraccion() {
+
 	}
-	
-	public Fraccion (int numerador, int denominador) {
-		this.numerador = numerador;
-		this.denominador = denominador;
+
+	public Fraccion(int numerador, int denominador) {
+
+		if (denominador == 0) {
+
+			System.out.println("El denominador no puede ser cero.");
+
+		} else {
+			
+			this.numerador = numerador;
+			this.denominador = denominador;			
+		}
+
 	}
 
 	public int getNumerador() {
@@ -29,57 +37,60 @@ public class Fraccion {
 	public void setDenominador(int denominador) {
 		this.denominador = denominador;
 	}
-	
-	public String toString (Fraccion fraccion) {
-		
-		
-		return (fraccion.getNumerador() + "/" + fraccion.getDenominador());
-		
+
+	public String toString() {
+
+		return this.numerador + "/" + this.denominador;
+
 	}
-	
-	public int multiplica (Fraccion fraccion) {
-		
-		int resultado = 0;
-		int nuevoNum = 0;
-		int nuevoDen = 0;
-		
-		nuevoNum = this.numerador*fraccion.getNumerador();
-		nuevoDen = this.denominador*fraccion.getDenominador();
-		
-		resultado = nuevoNum/nuevoDen;
-		
+
+	public Fraccion multiplicar(Fraccion fraccion) {
+
+		Fraccion resultado = new Fraccion();
+
+		resultado.setNumerador(this.numerador * fraccion.getNumerador());
+		resultado.setDenominador(this.denominador * fraccion.getDenominador());
+
 		return resultado;
 	}
 	
-	public Fraccion invierte (Fraccion fraccion) {
+	public Fraccion multiplicar (int n) {
 		
-		Fraccion nuevaFraccion = new Fraccion(0,0);
-		
-		nuevaFraccion.setNumerador(this.numerador);
-		nuevaFraccion.setDenominador(this.denominador);
-		
-		return nuevaFraccion;
-		
-	}
-	
-	public int divide (Fraccion fraccion) {
-		
-		int resultado = 0;
-		int nuevoNum = 0;
-		int nuevoDen = 0;
-		
-		nuevoNum = this.numerador*fraccion.getDenominador();
-		nuevoDen = this.denominador*fraccion.getNumerador();
-		resultado = nuevoNum/nuevoDen;
+		Fraccion resultado = new Fraccion();
+
+		resultado.setNumerador(this.numerador * n);
 		
 		return resultado;
 		
-		
+	}
+
+	public Fraccion dividir(Fraccion fraccion) {
+
+		Fraccion resultado = new Fraccion();
+
+		resultado.setNumerador(this.numerador * fraccion.getDenominador());
+		resultado.setDenominador(this.denominador * fraccion.getNumerador());
+
+		return resultado;
+
 	}
 	
-	
-	
-	
-	
-	
+	public Fraccion dividir (int n) {
+		
+		Fraccion resultado = new Fraccion();
+		
+		resultado.setDenominador(this.denominador * n);
+
+		return resultado;
+		
+	}
+
+	public void invertir() {
+
+		int aux = this.numerador;
+		this.numerador = this.denominador;
+		this.denominador = aux;
+
+	}
+
 }
