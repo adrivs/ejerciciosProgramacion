@@ -5,7 +5,7 @@ public class ArrayUni {
 	public static int[] generaArrayInt(int tamano, int maximo, int minimo) {
 
 		int[] array = new int[tamano];
-		System.out.print("Array: ");
+		
 		for (int i = 0; i < tamano; i++) {
 			int numero = (int) (Math.random() * maximo) + minimo;
 			array[i] = numero;
@@ -14,7 +14,7 @@ public class ArrayUni {
 		return array;
 	}
 
-	public int minimoArrayInt(int[] array) {
+	public static int minimoArrayInt(int[] array) {
 
 		
 		int minimo = 999;
@@ -25,9 +25,10 @@ public class ArrayUni {
 			if (array[i] < minimo){
 		        minimo = array[i];
 		      }
-			resultado = minimo;
+			
 		}
 		
+		resultado = minimo;
 		return resultado;
 		
 	}
