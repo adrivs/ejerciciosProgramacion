@@ -7,7 +7,7 @@ public class ArrayUni {
 		int[] array = new int[tamano];
 		
 		for (int i = 0; i < tamano; i++) {
-			int numero = (int) (Math.random() * maximo) + minimo;
+			int numero = (int) (Math.random() * maximo-minimo+1) + minimo;
 			array[i] = numero;
 		}
 		
@@ -18,7 +18,6 @@ public class ArrayUni {
 
 		
 		int minimo = 999;
-		int resultado = 0;
 		
 		for (int i = 0; i < array.length; i++) {
 			
@@ -28,8 +27,35 @@ public class ArrayUni {
 			
 		}
 		
-		resultado = minimo;
-		return resultado;
+		return minimo;
+		
+	}
+	
+	public static int maximoArrayInt(int [] array) {
+		
+		int maximo = 0;
+		
+		
+		for (int i = 0; i < array.length; i++) {
+			
+			if (array[i] > maximo){
+		        maximo = array[i];
+		      }
+			
+		}
+		
+		return maximo;
+	}
+	
+	public static int mediaArrayInt(int[] array) {
+		
+		int acumulador = 0;
+		
+		for (int i = 0; i < array.length; i++) {
+			acumulador += array[i];
+		}
+		
+		return (acumulador/array.length);
 		
 	}
 
