@@ -58,5 +58,24 @@ public class ArrayUni {
 		return (acumulador/array.length);
 		
 	}
+	
+	public static boolean estaEnArrayInt(int[] array, int numero) {
+		
+		boolean resultado = false;
+		int aux;
+		
+		for (int i = 0; i < array.length; i++) {
+			
+			aux = array[i];
+			
+			if (aux == numero) {
+				resultado = true;
+			}
+			
+		}
+		
+		return resultado;
+		
+	}
 
 }
