@@ -77,5 +77,25 @@ public class ArrayUni {
 		return resultado;
 		
 	}
+	
+	public static int posicionEnArray (int[] array, int posicion) {
+		
+		if (posicion > array.length || posicion < 0) {
+			System.out.println("La posicion que has indicado no se encuentra en el array.");
+		} else {
+			
+			for (int i = 0; i < array.length; i++) {
+				
+				if (i == posicion) {
+					
+					System.out.print("En la posición " + posicion + " se encuentra el número " + array[i]);
+					
+				}
+				
+			}
+			
+		}
+		
+	}
 
 }
